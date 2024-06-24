@@ -560,6 +560,36 @@ const aeons = [
         quote: "The philosopher gazes upon the stars trying to find the ultimate goal of civilization - 'Build a wall.' A majestic voice echoed in his head. 'Build a wall.'",
         desc: "The builder of the Celestial Comet Wall, the Subspace Crystalline Barrier, and the Great Attractor Base. Followers call THEM the 'Amber Lord,' one of the oldest and most tenacious Aeons, having survived the 'Dusk Wars.' Aware of the imminence of THEIR moratl enemy's devouring, the Amber Lord forged a powerful light-years-long seal that would isolate and protect the living worlds."
     },
+    {
+        name: "Xipe",
+        path: "The Harmony",
+        quote: "'The world is in harmony and the stars shine bright. Praise the Lord! All are connected and the wind of blessing breathes across the lands!'",
+        desc: "A plural Aeon from multiple harmonious worlds. The glorious Xipe of thousand faces is chanting songs of joy and happiness.\nTo battle the brutality of the laws of the universe, intelligent lifeforms must discard their cowardly selfishness and the differences between individuals, fusing into one singular melody - to have the strong help the weak, and the to protect life with death."
+    },
+    {
+        name: "IX",
+        path: "The Nihility",
+        quote: "'You may gaze deep into the vast grandeur of the stars, but do not glance at the abyss of the void... for it holds nothing except for the ability to make mortals lose all reason and thought.'",
+        desc: "The existence of Nihility is a mystery itself, THEIR form enshrouded by layers of mist. IX doesn't interact with the other Aeons. THEY believe that the ultimate fate of the mutliverse is nothingness, and therefore, worthless."
+    },
+    {
+        name: "Yaoshi",
+        path: "The Abundance",
+        quote: "'The flowers share their petals without care, waiting for their inevitable withering destiny. The birds fly high in song, moving toward their inevitable crash and death. The streams flow rapidly with life, in a direction where they inevitably run dry. Why must all things come to an end? There must be a miracle somewhere in the universe that can cure the disease known as finality.'",
+        desc: "Ask with sentiment, and you shall receive.\nYaoshi is the nurturer of the people, the god of peace. THEIR presence ensures the existence of life.\nYaoshi is an Aeon who answers all prayers and cannot bear to see death and the pains of illness."
+    },
+    {
+        name: "Fuli",
+        path: "The Remembrance",
+        quote: "'Time - the hardest working thief in the world. It keeps stealing away our present from us, and tossing it away in a warehouse named Memory. Some are addicted to recuperating their losses... Others care not in the slightest.'",
+        desc: "There is no existence more embracing than the Remembrance in its purest form: It chronsicles everything with neither affinity nor aversion. It unselfishly preserves every single fundamental fact and every single resplendent form. It is a river formed by the continuous flow of life, a treasure built from the eternal wisdom of antiquity.\n- And Fuli is the fis hthat swims back upstream in this river, the very key to this treasure vault. Seated in mediation at the heart of the Pure Land, THEY observe in silence the world's tireless repetitions of the same mistakes over and over again."
+    },
+    {
+        name: "Aha",
+        path: "The Elation",
+        quote: "'The Erudition is a hunk of junk, the Preservation is a fool, the Hunt has no sense of humor, an the Destruction is a lunatic. All the Aeons are as stubborn as they come. What a shame for Aha!'",
+        desc: "To savor joy is a privelege unique to sentient beings. Neither the dusty rocks nor the distant stars can fathom the humor that life entails.\nGo seek adversaries worth of your mettle, games that while away the hours, and outcomes indifferent to victory or defeat.\nGo chase laughter that leaves you breathless, twists born of fate's wimsy, and songs that ascend your soul."
+    },
 ]
 
 async function seed() {
