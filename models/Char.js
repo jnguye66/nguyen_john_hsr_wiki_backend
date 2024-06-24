@@ -8,29 +8,80 @@ const charSchema = Schema({
     unique: true,
   },
 
-  username: {
+  path: {
+    type: String,
+    required: true
+  },
+
+  element: {
+    type: String,
+    required: true
+  },
+
+  faction: {
+    type: String,
+    required: true,
+  },
+
+  intro: {
     type: String,
     required: true,
     unique: true,
-    // Validation Rule
-    min: [5, 'Username must be at least 5 characters long.'],
   },
 
-  email: {
-    type: String,
-    required: true,
-    unique: true,
+  story: {
+    stories: {
+      details: {
+        type: String,
+        required: true
+      },
+      story_1: {
+        type: String,
+        required: true
+      },
+      story_2: {
+        type: String,
+        required: true
+      },
+      story_3: {
+        type: String,
+        required: true
+      },
+      story_4: String
+    },
+    // required: true,
+    // unique: true
   },
 
-  password: {
-    type: String,
-    required: true,
-    unique: true,
+  traces: {
+    skills:
+      [
+        {
+          title: String,
+          name: String,
+          targetting: String,
+          desc: String,
+          toughness: Number,
+        }
+      ],
+    awakenings:
+      [
+        {
+          stage: Number,
+          name: String,
+          desc: String,
+        }
+      ],
+    stats:
+      [
+        {
+          stat: String,
+          amt: Number
+        }
+      ],
+    // required: true,
   },
 
-  path: { type: String, required: true },
-
-  element: { type: String, required: true },
 });
 
 // Index to sort by name in asc order

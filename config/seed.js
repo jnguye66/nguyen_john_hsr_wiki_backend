@@ -12,44 +12,367 @@ const Aeon = require('../models/Aeon.js');
 const chars = [
     {
         name: "Trailblazer",
-        username: "Galactic Baseballer",
-        email: "trashpanda123@express.com",
-        password: "aeonDescend456",
         path: "Harmony",
-        element: "Imaginary"
+        element: "Imaginary",
+        faction: "Astral Express",
+        intro: "A boy/girl decides to travel with the Astral Express to eliminate the threat of the Stellaron",
+        story: {
+            stories: {
+                details: 'A boy/girl decides to travel with the Astral Express to eliminate the threat of the Stellaron',
+
+                story_1: "You don't remember much.\nYou're not from around here, nor did you come from elsewhere. You're not really going anywhere-\nJust then, the indistinct voice whispers into your ear. That sorrowful and tender persuasion, that deceptive goading...\nThe seeds take root. You open your eyes, and the speaker is no longer there.\n\nBut there are more and more voices, and they are getting clearer and clearer.\nSome give easygoing care, some calmly provide advice, some speak firm support, and some gift gentle direction...\nYou see the silken thread being woven to form tomorrow.\n\nA huge beast descends from infinity,\ngolden pupils stare down from the darkness, and you are no longer abandoned by the past.\nYou will also set upon a long journey, and the thorns you have stepped on have become your path.\n\nThe train whistles, wishing you a successful journey to the coming future...\nBy your own will.",
+
+                story_2: "You have arrived at the 'City of Preservation.'\nBehind the snow curtain, the wind lashes like steel blades, but the kindling burns on.\nDistant lands won't hear them, and the earth trembles in kind, with only the wailing crowds braving the wind.\n\n After facing foreign enemies, the Eternal Freeze, and reality's fissures, a rot beings to fester within the fort.\nYou try lending a helping hand, but are forsaken.\nSome once looked down on you and misunderstood you, but still you stood by their side and helped them find t heir way. More care about you and worry about you. They face their suffering, and find the cure for the distressed.\nEventually, they come to your side.\n\nIn the ice and snow, you are like a fire, protecting the soul of this world...\nEven though you must scorch yourself day and night.",
+
+                story_3: "The harmonious music guides you to stumble into the sweet dream, as syrup and soda fill your throat.\nThe festival is grand, the crowd boisterous, and strangers cast on disguises to meet up in the dream.\nYou view to your hearts' desires the wondrous and otherworldly views, and part ways when dewdrops shimmer with the break of dawn -\nWhen the pitch-black midnight has just begun.\n\nThe clock hands go tick-tock, and death follows closely like a shadow.\nYou are placed onto the table as a bargaining chip, but manage to win for yourself the right to uncover the secret.\nYou bring with you the dreams of the dead and continue on the road that they did not walk, facing the enemies they could not defeat-\n\nThe false god rises in the conglomeration of the multitude's wishes, and the unanimous song of the gazillions drowns out your existence.\nThose walking on different raods take up each other's hands, your melodies interweave with each other, faint but imperishable like the lights in a long night.\nOne after one, people startle awake from their dream. That tiny song finally merges into a deafening roar in the end, tearing free of the dream's curtains.\n\n The eternal sweet dream scatters in a fleeting instant, and you finally understand why people slumber-\nThey do so towards a dawn freed from dreams.",
+
+                story_4: '',
+            }
+        },
+        traces: {
+            skills: [
+                {
+                    title: "Basic Attack",
+                    name: "Swing Dance Etiquette",
+                    targetting: "Single Target",
+                    desc: "Deals Imaginary DMG equal to 100% of the Trailblazer's ATK to a single target enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Talent",
+                    name: "Full-on Aerial Dance",
+                    targetting: "Support",
+                    desc: "The Trailblazer immediately regenerates 10.0 Energy when an enemy target's Weakness is Broken",
+                    toughness: 0
+                },
+                {
+                    title: "Skill",
+                    name: "Halftime to Make It Rain",
+                    targetting: "Bounce",
+                    desc: "Deals Imaginary DMG equal to 50% of the Trailblazer's ATK to a single target enemy and additionally deals DMG for 4 times, with each time dealing Imaginary DMG equal to 50% of the Trailblazer's ATK to a random enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Ultimate",
+                    name: "All-Out Footlight Parade",
+                    targetting: "Support",
+                    desc: "Grants all allies the Backup Dancer effect, lasting for 3 turn(s). This duration reduces by 1 at the start of Trailblazer's every turn. Allies that have the Backup Dancer effect have their Break Effect increased by 30%. And when they attack enemy targets that are in the Weakness Broken state, the Toughness Reduction of this attack will be converted into 1 instance of Super Break DMG.",
+                    toughness: 0
+                },
+                {
+                    title: "Technique",
+                    name: "Now! I'm the Band!",
+                    targetting: "Support",
+                    desc: "After the Technique is used, at the start of the next battle, all allies' Break Effect increases by 30%, lasting for 2 turn(s).",
+                    toughness: 0
+                },
+            ],
+            awakenings: [
+                {
+                    stage: 2,
+                    name: "Dance With the One",
+                    desc: "When the number of enemy targets on the field is 5 or more/4/3/2/1, the Super Break DMG triggered by the Backup Dancer effect increases by 20%/30%/40%/50%/60%.",
+                },
+                {
+                    stage: 4,
+                    name: "Shuffle Along",
+                    desc: "When using Skill, additionally increases the Toughness Reduction of the first instance of DMG by 100%.",
+                },
+                {
+                    stage: 6,
+                    name: "Hat of the Theater",
+                    desc: "Additionally delays the enemy target's action by 30% when allies Break enemy Weaknesses.",
+                },
+            ],
+            stats: [
+                {
+                    stat: "Break Effect",
+                    amt: 37.3,
+                },
+                {
+                    stat: "Imaginary DMG",
+                    amt: 14.4,
+                },
+                {
+                    stat: "Effect Resistance",
+                    amt: 10,
+                },
+            ]
+        }
     },
+    
     {
         name: "March 7th",
-        username: "Drifting Ice",
-        email: "mitsuki0307@express.com",
-        password: "foreverWandering789",
         path: "Preservation",
-        element: "Ice"
+        element: "Ice",
+        faction: "Astral Express",
+        intro: "A girl who once slumbered in eternal ice and knows nothing about her past.\nTo find out the truth about her origins, she decided to travel with the Astral Express.\nAs of right now, she has prepared about 67 different versions of her life story for herself.",
+        story: {
+            stories: {
+                details: "A sprited and quirky young girl who is into all the things girls her age are interested in, such as taking photos.\nShe was awakened from a piece of drifting eternal ice, only to find that she knows nothing about herself or her past. Though initially feeling dejected, she decided to name herself after the date of her rebirth.\nAnd thus, on that day, March 7th was born.",
+
+                story_1: "Why does March 7th take photos?\n'First of all, girls like me should like this kind of pastime.'\n'Besides, I won't forget anything that I keep a photo of.\n\nWhat has March 7th come to learn about photography?\n'Number one, when taking pictures of terrible cuisines, all the details must be clearly visible on the pictures because taking pictures of food is equal to eating them. Every detail matters.'\n'Number two, as long as you take a picture with your eyes closed, you will be able to capture an expression of your subject with their eyes closed.\n\nWhy is March 7th always wearing her camera?\n'Because if anyone ever seals me away in ice again, at least I'll have my camera with me!'\n\nSo why doesn't March 7th just use the camera on her phone?\n'Oh yeah, why not - hang on, it's because of that sense of formality!'",
+
+                story_2: "March 7th's ability is 'Six-Phased Ice,' but she always insisted that it is not ice but some kind of condensed crystal.\n'Come in, ice can't be this beautiful.'\n\nThe bows and arrows that March 7th uses in battle are also made of the Six-Phased Ice, but she is not satisfied with the fact that her weapon is a bow.\n'Great warriors never use bows!'\n'Besides, if I use my ice arrow to attack my ice shield, nothing will happen at all!'\n\nMarch 7th has also worked hard to practice a unique skill called 'Star Crazing: Glass Greatsword,' but she never succeeded.\n'March, juding by the name, it should be a greatsword, right?'\n'Well, but it doesn't feel as good as an ice sculpture... smash.'",
+
+                story_3: "Compared to Pom-Pom the conductor, Himeko the Navigator, Dan Heng the Guard, and Welt the Jack-of-all-Trades, even March 7th has ahard time explaining her role aboard the Express despite calling herself a 'Warrior.'\nBut March 7th's every move affects the crew's course of action all the time.\n\n'Passenger March 7th slipped and fell...'\n'March, have you taken pictures of the sights over there?'\n'I believe March. If she said it's not delicious, then it's truly not delectable.'\n\nRather than calling March 7th someone who constantly wories people, it would be better to say that she works her way into people's hearts. March 7th, of course, is oblivious to this, and is struggling to think up the right role for The Trailblazer.",
+
+                story_4: "For March 7th, who has been drifting in space, the situation in which she awoke isn't too bad.\nShe woke up on a passing train, and the people on the train looked friendly.\nThe only problem is that even though she has a reasonable understanding of what's going on around her, she still doesn't know anything about herself.\n\n'Who am I? Where do I come from...'\n\nMarch 7th looks at herself in the mirror, imagining dozens of potential past lives for herself as she tries on the various outfits that Hiemko had assembled for her.\nBut she can't be sure what her past was like, and what kind of past a girl like her should have...\nThe only thing March 7th can choose to be is her current self, and the only thing she can look forward to is the future. She is both fightened and glad.",
+            }
+        },
+        traces: {
+            skills: [
+                {
+                    title: "Basic Attack",
+                    name: "Frigid Cold Arrow",
+                    targetting: "Single Target",
+                    desc: "Deals Ice DMG equal to 100% of March 7th's ATK to a single enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Talent",
+                    name: "Girl Power",
+                    targetting: "Single Target",
+                    desc: "After a Shielded ally is attacked by an enemy, March 7th immediately Counters, dealing Ice DMG equal to 100% of her ATK. This effect can be triggered 2 time(s) each turn.",
+                    toughness: 10
+                },
+                {
+                    title: "Skill",
+                    name: "The Power of Cuteness",
+                    targetting: "Defense",
+                    desc: "Provides a single ally with a Shield that can absorb DMG equal to 57% of March 7th's DEF plus 760 for 3 turn(s). If the ally's current HP percentage is 30% or higher, greatly increases the chance of enemies attacking that ally.",
+                    toughness: 10
+                },
+                {
+                    title: "Ultimate",
+                    name: "Glacier Cascade",
+                    targetting: "AoE",
+                    desc: "Deals Ice DMG equal to 150% of March 7th's ATK to all enemies. Hit enemies have a 50% base chance to be Frozen for 1 turn(s). While Frozen, enemies cannot take action and will receive Additional Ice DMG equal to 60% of March 7th's ATK at the beginning of each turn.",
+                    toughness: 20
+                },
+                {
+                    title: "Technique",
+                    name: "Freezing Beauty",
+                    targetting: "Attack",
+                    desc: "Immediately attacks the enemy. After entering battle, there is a 100% base chance to Freeze a random enemy for 1 turn(s). While Frozen, the enemy cannot take action and will take Additional Ice DMG equal to 50% of March 7th's ATK at the beginning of each turn.",
+                    toughness: 0
+                },
+            ],
+            awakenings: [
+                {
+                    stage: 2,
+                    name: "Purity",
+                    desc: "Skill removes 1 debuff from an ally.",
+                },
+                {
+                    stage: 4,
+                    name: "Ice Spell",
+                    desc: "The duration of the Shield generated from her Skill is extended for 1 turn(s).",
+                },
+                {
+                    stage: 6,
+                    name: "Hat of the Theater",
+                    desc: "Increases Ultimate's base chance to Freeze enemies by 15%.",
+                },
+            ],
+            stats: [
+                {
+                    stat: "Ice DMG",
+                    amt: 22.4,
+                },
+                {
+                    stat: "Defense",
+                    amt: 22.5,
+                },
+                {
+                    stat: "Effect Resistance",
+                    amt: 10,
+                },
+            ]
+        }
     },
+
     {
         name: "Dan Heng",
-        username: "Long Lost Past",
-        email: "pastself@express.com",
-        password: "prevailforwards123",
-        path: "Destruction",
-        element: "Imaginary"
+        path: "Hunt",
+        element: "Wind",
+        faction: "Astral Express",
+        intro: "A cold and reserved young man who is reticent about his past. To avoid his kin, he decided to travel with the Astral Express.",
+        story: {
+            stories: {
+                details: "A cold and reserved young man who wields a spear known as Cloud-Piercer. He acts as the Express' guard on its long trailblazing expedition.\nDan Heng never talks much about his past. In fact, he joined the Express Crew to escape from a past of his own making.\nBut can the Express really help him outrun his past?",
+
+                story_1: "A new dawn begins\n\nIt's just another extremely average day aboard this giant ship. The markets have just opened and the morning dew is still fresh, but the youngman crossing the street has never seen such a sight. B efore he manages to notice all the differences between the actual city and its descriptions in books, he is immersed in savoring the warmth of the sun on the back of his neck.\n\nIt is his first time seeing his own body clearly. This body belongs to him. It belongs to this current name.\n\nWhen he arrives at the port, the escorting soldier removes the last of his shackles. He wealks forward without looking back. He can feel, ever so faintly, several pairs of eyes gazing at him from within the city. Eyes filled with hatred.\n\nIt isn't until the spaceship takes off that he turns his head and takes one final look at this place. It really is magnificent and grand spaceship - just like the books say.\n\nHe only glances at it once, then turns his head away to where the stars shimmer dimly and an uncertain future lies\n\nHe looks out in silence.",
+
+                story_2: "A new dawn begins.\n\nHe steps off one IPC spaceship then boards another. He'd never even heard of the ship's destination, but that doesn't matter. There is nowhere he particularly wanted to go. His only goal is to get as far away as possible from his past, from his 'home.'\n\nOn these spaceships, people come and go all the time. None of the IPC crews care who he is, so long as he can work.\n\nHe has changed his appearance and might no longer be recognized, but he knows that same power still lurks within him, unable to be shaken off no matter where he goes. This power drags him down, slows him, tries to overwhelm him, and makes him unable to escape his past. He has to be careful.\n\nBut he still can't shake off the man with the beastly eyes.\n\nIf others in his homeworld felt hatred toward him, then that man only has a killing intent toward him - even the spaceships he had traveled on were all annihilated. That man had died before him, but would reappear soon after.\n\nOutside his homeworld, there's a larger world where anything is possible.",
+
+                story_3: "A new dawn begins.\n\nHe boards another spaceship, and the passengers are all wearing different masks. He nearly has his memory stolen, and is forced to listen to a lecture that sounded like mad ramblings.\n\nHe knows that huge monsters prowl upon this route, but he could only find a way toward survival by traveling along the most dangerous of roads.\n\nHe defeats the huge monsters and disembarks at the next port. He thinks he could remain undetected among the countless ships, but he is stopped by a redhead woman. She salutes him in thanks, saying she is with one of the ships he had rescued.\n\nHe is about to turn and leave when he sees a parked train besides the redhead woman.\n\n'Where's your next stop?'\n'...Haven't decided yet.'\n'Then would you like to board our Express?'\n'...'\n'We're retracing our previous journey. There's so much to see all over again. We need a guard... And an archiver.'\n'...'\n'You can get off any time once you made up your mind on where to go.'\n'Alright.'",
+
+                story_4: "A new dawn begins.\nHe rubs his eyes, realizing it had been too long since he had such a good night's sleep. He considers himself as only staying temporarily and refused the room specially prepared for him, making a simple bed on the floor of the Archives. However, he stayed up all night reading the data bank. At some point, he'd drifted off to sleep.\n\nHe opened the door to find the conductor standing there, reprimanding him for staying up late — Otherwise he'd miss out on a piping hot breakfast and would've wasted the care put into it. He nods and the conductor quietens down in satisfaction, wobbling as they lead him into the passenger car.\n\nThe redhead woman — who he now knows is named Himeko — flashes him a smile. The brunet man to the other side — Mr. Yang — remains silent despite appearing to have many questions on his mind.\n\nBefore he knew it, he'd spent many a morning just like this.\n\nThe process of re-visiting the route is not easy, mostly due to the numerous roadblocks caused by Stellaron. Sometimes, they would encounter the huge monsters he'd defeated before. They even found an enormous chunk of floating ice — encased in which was a living girl.\n\nThat's why he wasn't very surprised when he detected that the (boy/girl) named Trailblazer has an actual Stellaron sealed inside his/her body.\n\nThe Express's journey will continue on. Is there anything beyond the realm of possibility?",
+            }
+        },
+        traces: {
+            skills: [
+                {
+                    title: "Basic Attack",
+                    name: "Cloudlancer Art: North Wind",
+                    targetting: "Single Target",
+                    desc: "Deals Wind DMG equal to 100% of Dan Heng's ATK to a single enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Talent",
+                    name: "Superiority of Reach",
+                    targetting: "Enhance",
+                    desc: "When Dan Heng is the target of an ally's Ability, his next attack's Wind RES PEN increases by 36%. This effect can be triggered again after 2 turn(s).",
+                    toughness: 0
+                },
+                {
+                    title: "Skill",
+                    name: "Cloudlancer Art: Torrent",
+                    targetting: "Single Target",
+                    desc: "Deals Wind DMG equal to 260% of Dan Heng's ATK to a single enemy. On a CRIT Hit, there is a 100% base chance to reduce the target's SPD by 12% for 2 turn(s).",
+                    toughness: 20
+                },
+                {
+                    title: "Ultimate",
+                    name: "Ethereal Dream",
+                    targetting: "Single Target",
+                    desc: "Deals Wind DMG equal to 400% of Dan Heng's ATK to a single enemy. If the enemy is Slowed, the Ultimate's DMG multiplier increases by 120%.",
+                    toughness: 20
+                },
+                {
+                    title: "Technique",
+                    name: "Splitting Spearhead",
+                    targetting: "Enhance",
+                    desc: "After Dan Heng uses his Technique, his ATK increases by 40% at the start of the next battle for 3 turn(s).",
+                    toughness: 0
+                },
+            ],
+            awakenings: [
+                {
+                    stage: 2,
+                    name: "Hidden Dragon",
+                    desc: "When current HP percentage is 50% or lower, reduces the chance of being attacked by enemies.",
+                },
+                {
+                    stage: 4,
+                    name: "Faster Than Light",
+                    desc: "After launching an attack, there is a 50% fixed chance to increase own SPD by 20% for 2 turn(s).",
+                },
+                {
+                    stage: 6,
+                    name: "High Gale",
+                    desc: "Basic ATK deals 40% more damage to Slowed enemies.",
+                },
+            ],
+            stats: [
+                {
+                    stat: "Wind DMG",
+                    amt: 22.4,
+                },
+                {
+                    stat: "Attack",
+                    amt: 18,
+                },
+                {
+                    stat: "Defense",
+                    amt: 12.5,
+                },
+            ]
+        }
     },
+
     {
         name: "Himeko",
-        username: "CoffeeNavigator5",
-        email: "galacticnavigator@express.com",
-        password: "trainTechnician01",
-        path: "Erudtion",
-        element: "Fire"
+        path: "Erudition",
+        element: "Fire",
+        faction: "Astral Express",
+        intro: "The one who repaired the Astral Express.\nTo witness the vast starry sky, she decided to travel within the Astral Express.\nHer hobby is brewing hand-made coffee.",
+        story: {
+            stories: {
+                details: "An adventurous scientist encountered the Astral Express as a young woman when it got stranded in her homeworld.\nYears later, when Himeko finally repaired the Express and began her journey into the stars, she realized that this is only the beginning. On her journey to trailblaze new worlds, she would need many more companions...\nAnd while they may have different destinations, they all gaze at the same starry sky.",
+
+                story_1: "The girl is lost.\n\nShe can't remember when she became lost. She just walked and walked, on and on into the dark night, chasing the sun and the moon, over and over again - until she falls.\n\nShe remembers what she looked like as a college freshman, remembers her chosen major - intersterllar travel dynamics - and now she's lying face down in the mud.\n\nShe looks up to the stars, and just then sees meteors streaming down: One, two, three... And then more, smaller ones, flickering and flashing ever so finely before the magnificent blaze tore open the night.\n\nHer limbs drag her forward, leading her on to where the land meets the ocean. At the shoreline, the waters jostle against her like how the tide treats that stranded Express, alone and lost.\n\nShe walks in and see the scenery outside beginning to change. The Express shows her a myriad of magnificent worlds. They are faraway, beyond her homeworld, yet also close enough to be a simple train ride.\n\nShe tries to repair the Express. It starts up only briefly, but it is enough to skid across the sky of her home. She immediately sees the path home. From that altitude, the journey is so short, and even the ocean of her homeworld appears so insignificant.\n\nIt asked her whether she'd like to travel together. She wonders what kind of journey that would be.\n\n'A journey to the beginning.'\n'Lets go then.' Without hesitation, the girl replied, 'Just as you brought me home, so would I take you home, too.'",
+
+                story_2: "Himeko has a suitcase.\n\nThis suitcase is her treasure trove. Previously, she'd filled it with all kinds of train repair tools to fix up the Express. But now, it's packed with a molecular saw, an escaped satellite, and countless other contraptions - the embodiment of her whims and the proof of her resolute will.\n\nNo travel companion is more faithful to her than this suitcase. Passengers come and go on the Express, and perhaps not even 'the conductor' would be able to accompany her and the Express from start to finish.\n\nBut she doesn't care. She didn't care when that pretentious blond man left without saying goodbye, just like how she didn't care about her distant homeworld and old fiends.\n\nShe knows that this journey is lonely. Even if she could get to know like-minded travel companions, even if they showed her generous grace, even if she could witness the end of a complete journey with those companions - that's all just a momentary fluke.\n\nShe knows that this journey is lonely. NObody can follow in the exact same footsteps as anyone else. Nobody can experience for someone else everything that happens along a journey. All she can rely on are her own two eyes and feet.",
+
+                story_3: "Himeko's memory is very good.\n\nThe longer the journey gets, the more travel companions she accrues. She can still remember many of them.\n\nShe remembers her awkward chit-chats with Pom-Pom, and how the first two passengers aboard the Express were Welt and his Blond friend. She remembers how the taciturn Dan Heng defeated the monsters that can swallow stars with just one strike of his lance. She remembers how March 7th had awoken from her icy sulmber, all the outfits she'd designed for March, and what March loves the most. She rememberes how the Crew arrived at Herta Space Station, how she met Trailblazer, and how they'd embarked on a new journey once more.\n\nShe remembers the specifications for every single component of the Express and how they're assembled. She remembers when to oil the Express' bearings and when each plant on the Express needs watering. She remembers Pom-Pom's non-negotiable bottom line, and that Welt has rather juvenile hobbies. She remembers that Dan Heng is always pulling all nighters to organize the data bank, and how March 7th loves to sleep in. She remembers the personality, habits, hobbies, birthdays, and other anniversary days of everyone aboard the Express. And she remembers much, much more.\n\nThe greatest pleasure for Himeko is that everyone can safely reach their destination on the Express.\n\n'Traveling always has an endpoint. When it happens, I'll smile and say goddbye to everyone.'\n\nIt's memory that has formed the road she came from, and memory that will eventually return her to the seas on whence she came.",
+
+                story_4: "'What a long journey.' She says.\n\n'I've been waiting for so, so long. |REDACTED| looks at her: 'It wasn't bad luck that has led you down this path, but wanderlust and curiosity'\n\n'Of course,' she smiles, 'But I've experienced far less than what you've been through.'\n\n'No, I've never experienced the things you have.' |REDACTED| shakes their head:'There are as many routes as there are pairs of feet.'\n\n'Right now, we may be standing in the same place, but we harbor different thoughts and views.'\n\nTogether, they look up to the stars in silence, and just then saw meteors streaming down: One, two, three... And then more, smaller ones, flickering and flashing ever so finely before a magnificent blaze tore open the night.\n\nA quiet voice disturbs the still air once more:'What do you see?'\n\n'The stars have finished their journey.' She says.\n\n|REDACTED| laughs: 'I, instead, see that their journey is only just beginning.'\n\nThey do not speak again.\n\n'Lets go back. they're waiting for me.'",
+            }
+        },
+        traces: {
+            skills: [
+                {
+                    title: "Basic Attack",
+                    name: "Sawblade Tuning",
+                    targetting: "Single Target",
+                    desc: "Deals Fire DMG equal to 100% of Himeko's ATK to a single enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Talent",
+                    name: "Victory Rush",
+                    targetting: "AoE",
+                    desc: "When an enemy is inflicted with Weakness Break, Himeko gains 1 point of Charge (max 3 points). If Himeko is fully Charged when an ally performs an attack, Himeko immediately performs 1 follow-up attack and deals Fire DMG equal to 140% of her ATK to all enemies, consuming all Charge points. At the start of the battle, Himeko gains 1 point of Charge.",
+                    toughness: 10
+                },
+                {
+                    title: "Skill",
+                    name: "Molten Detonation",
+                    targetting: "Blast",
+                    desc: "Deals Fire DMG equal to 200% of Himeko's ATK to a single enemy and Fire DMG equal to 80% of Himeko's ATK to enemies adjacent to it.",
+                    toughness: 20
+                },
+                {
+                    title: "Ultimate",
+                    name: "Heavenly Flare",
+                    targetting: "AoE",
+                    desc: "Deals Fire DMG equal to 230% of Himeko's ATK to all enemies. Himeko regenerates 5 extra Energy for each enemy defeated.",
+                    toughness: 20
+                },
+                {
+                    title: "Technique",
+                    name: "Incomplete Combustion",
+                    targetting: "Impair",
+                    desc: "After using Technique, creates a dimension that lasts for 15 second(s). After entering battle with enemies in the dimension, there is a 100% base chance to increase Fire DMG taken by enemies by 10% for 2 turn(s). Only 1 dimension created by allies can exist at the same time.",
+                    toughness: 0
+                },
+            ],
+            awakenings: [
+                {
+                    stage: 2,
+                    name: "Starfire",
+                    desc: "After using an attack, there is a 50% base chance to inflict Burn on enemies for 2 turn(s). When afflicted with Burn, enemies take Fire DoT equal to 30% of Himeko's ATK at the start of each turn.",
+                },
+                {
+                    stage: 4,
+                    name: "Magma",
+                    desc: "Skill deals 20% more DMG to enemies currently afflicted with Burn.",
+                },
+                {
+                    stage: 6,
+                    name: "Benchmark",
+                    desc: "When current HP percentage is 80% or higher, CRIT Rate increases by 15%.",
+                },
+            ],
+            stats: [
+                {
+                    stat: "Fire DMG",
+                    amt: 22.4,
+                },
+                {
+                    stat: "Attack",
+                    amt: 18,
+                },
+                {
+                    stat: "Effect Resistance",
+                    amt: 10,
+                },
+            ]
+        }
     },
-    {
-        name: "Welt Yang",
-        username: "Blackhole Generator",
-        email: "weightofpower@express.com",
-        password: "humanityPrevail4",
-        path: "Nihility",
-        element: "Imaginary"
-    }
 ];
 
 const enemies = [
