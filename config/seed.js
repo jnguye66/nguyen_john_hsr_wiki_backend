@@ -373,6 +373,97 @@ const chars = [
             ]
         }
     },
+
+    {
+        name: "Welt",
+        path: "Nihility",
+        element: "Imaginary",
+        faction: "Astral Express",
+        intro: "A seasoned member of the Express crew. The passion buried in his heart burns anew as he enjoys this fresh adventure. Occasionally, he would sketch the experiences in a notebook.",
+        story: {
+            stories: {
+                details: "The wise and sophisticated former Anti-Entropy Sovereign who inherits the name of the world - Welt. He has saved Earth from annihilation time and time again.\n\nAfter the incident with St. Fountain came to a close, Welt had no choice but to venture with the initiator of the incident to the other side of the portal.\n\nPerhaps even he didn't expect the new journey nor companions that awaited him there.",
+
+                story_1: "On the way to the portal, Welt took out a pen and started outlining a sketch. For the eight years prior to that moment, he'd been repeating this job.\n\n Going back further in time, he would construct objects in a different way, as long as the images could be pictured in his mind. But he could never regard that as 'creation,' because they were just the way the original is. Those had nothing to do with his mind.\n\nThis is just the duty of the man who inherited the name of the world. If the world needs him to save it, then he will become that hero without hisitation. He has fallen down many times and been mocked even more, but he will always stand before everyone either in the past or the future - he will never change.\n\nOnly now, he finds himself embarking on a new journey.",
+
+                story_2: "When Welt returned to that dangerous cosmic battlefield, he could feel his blood start to boil once more.\n\nEven when his spaceship lost power and was drifting aimlessly through space, he joked casually with his companion: 'The end of one adventure is often the beginning of another.'\n\nWhen a passing-by Himeko managed to save them and informed them that they couldn't go back home, he kept up his jokes: 'This is like something out of a cartoon, and it's far too coincidental to be real.'\n\nLife really is that coincidental.\n\nSince he can't find his way back home and can't live out a peaceful existence for the time being, why doesn't he take up arms again and fight?\n\nThis time, there is no burden or destiny to bear. Everything shall obey his own will.",
+
+                story_3: "These days, Welt rarely fights, and it remains unknown whether or not he retains the strength from his heyday. Gravity manipulation has remained his usual combat means, ever since his cane was transformed from the Star of Eden.\n\nHe suppresses his enemies with gravity, even creating a kind of mini-black hole - what he considered his everyday powers are met with amazement by the youngsters of the Express.\n\n'Mr. Yang's incredible, amazing!'\n'If you need help with anything, Trailblazer, go ask Mr. Yang.'\n'You need to take turns. Let him rest a little while...'\n\nHe is shocked to realize that his carelessness and surety are the results of his countless experiences, marks of the relentless passage of time he had endured. However, the youths aboard the Express are like blank pieces of paper, writing out their own lives.\n\nWhat kind of responsiblities should he take on in their lives?\n\nHe couldn't help but think of the names of people throughout his life who had helped him before.",
+
+                story_4: "- Welt's Log |DATE|/|DATE|/|DATE\n\n|REDACTED|'s relationship with the protagonists:\n\n|REDACTED|-|REDACTED|'s sparkling personality is just like the protagonist in a cartoon. Go for it!\n|REDACTED| - A lively youth. I hope she can keep being imaginative, and not feel guilty even if she stumbles. Youths are always going to make mistakes, and |REDACTED| will be able to support her.\n|REDACTED| - A reliable youth. There's no need to worry about him. I hope he can chat more with |REDACTED|, but if he doesn't want to, then that's fine.\n|REDACTED| - I can trust this companion with my life,|REDACTED| believes she will make the right decision.\n||REDACTED| - A common character in cartoons. Seemingly just a normal creature, but actually possesses frighteningly powerful abilities and a complicated background.\n\nNote: If I ever get back home, consider making a cartoon out of this.",
+            }
+        },
+        traces: {
+            skills: [
+                {
+                    title: "Basic Attack",
+                    name: "Gravity Suppression",
+                    targetting: "Single Target",
+                    desc: "Deals Imaginary DMG equal to 100% of Welt's ATK to a single enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Talent",
+                    name: "Time Distortion",
+                    targetting: "Enhance",
+                    desc: "When hitting an enemy that is already Slowed, Welt deals Additional Imaginary DMG equal to 60% of his ATK to the enemy.",
+                    toughness: 10
+                },
+                {
+                    title: "Skill",
+                    name: "Edge of the Void",
+                    targetting: "Bounce",
+                    desc: "Deals Imaginary DMG equal to 72% of Welt's ATK to a single enemy and further deals DMG 2 extra times, with each time dealing Imaginary DMG equal to 72% of Welt's ATK to a random enemy. On hit, there is a 75% base chance to reduce the enemy's SPD by 10% for 2 turn(s).",
+                    toughness: 20
+                },
+                {
+                    title: "Ultimate",
+                    name: "Synthetic Black Hole",
+                    targetting: "AoE",
+                    desc: "Deals Imaginary DMG equal to 150% of Welt's ATK to all enemies, with a 100% base chance for enemies hit by this ability to be Imprisoned for 1 turn. Imprisoned enemies have their actions delayed by 40% and SPD reduced by 10%.",
+                    toughness: 20
+                },
+                {
+                    title: "Technique",
+                    name: "Gravitational Imprisonment",
+                    targetting: "Impair",
+                    desc: "After using Welt's Technique, create a dimension that lasts for 15 second(s). Enemies in this dimension have their Movement SPD reduced by 50%. After entering battle with enemies in the dimension, there is a 100% base chance to Imprison the enemies for 1 turn. Imprisoned enemies have their actions delayed by 20% and SPD reduced by 10%. Only 1 dimension created by allies can exist at the same time.",
+                    toughness: 0
+                },
+            ],
+            awakenings: [
+                {
+                    stage: 2,
+                    name: "Retribution",
+                    desc: "When using Ultimate, there is a 100% base chance to increase the DMG received by the targets by 12% for 2 turn(s).",
+                },
+                {
+                    stage: 4,
+                    name: "Judgment",
+                    desc: "Using Welt's Ultimate additionally regenerates 10 Energy.",
+                },
+                {
+                    stage: 6,
+                    name: "Punishment",
+                    desc: "Deals 20% more DMG to enemies inflicted with Weakness Break.",
+                },
+            ],
+            stats: [
+                {
+                    stat: "Imaginary DMG",
+                    amt: 14.4,
+                },
+                {
+                    stat: "Attack",
+                    amt: 28,
+                },
+                {
+                    stat: "Effect Resistance",
+                    amt: 10,
+                },
+            ]
+        }
+    },
 ];
 
 const enemies = [
