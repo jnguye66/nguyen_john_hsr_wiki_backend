@@ -582,13 +582,43 @@ const aeons = [
         name: "Fuli",
         path: "The Remembrance",
         quote: "'Time - the hardest working thief in the world. It keeps stealing away our present from us, and tossing it away in a warehouse named Memory. Some are addicted to recuperating their losses... Others care not in the slightest.'",
-        desc: "There is no existence more embracing than the Remembrance in its purest form: It chronsicles everything with neither affinity nor aversion. It unselfishly preserves every single fundamental fact and every single resplendent form. It is a river formed by the continuous flow of life, a treasure built from the eternal wisdom of antiquity.\n- And Fuli is the fis hthat swims back upstream in this river, the very key to this treasure vault. Seated in mediation at the heart of the Pure Land, THEY observe in silence the world's tireless repetitions of the same mistakes over and over again."
+        desc: "There is no existence more embracing than the Remembrance in its purest form: It chronsicles everything with neither affinity nor aversion. It unselfishly preserves every single fundamental fact and every single resplendent form. It is a river formed by the continuous flow of life, a treasure built from the eternal wisdom of antiquity.\n- And Fuli is the fish that swims back upstream in this river, the very key to this treasure vault. Seated in mediation at the heart of the Pure Land, THEY observe in silence the world's tireless repetitions of the same mistakes over and over again."
     },
     {
         name: "Aha",
         path: "The Elation",
         quote: "'The Erudition is a hunk of junk, the Preservation is a fool, the Hunt has no sense of humor, an the Destruction is a lunatic. All the Aeons are as stubborn as they come. What a shame for Aha!'",
         desc: "To savor joy is a privelege unique to sentient beings. Neither the dusty rocks nor the distant stars can fathom the humor that life entails.\nGo seek adversaries worth of your mettle, games that while away the hours, and outcomes indifferent to victory or defeat.\nGo chase laughter that leaves you breathless, twists born of fate's wimsy, and songs that ascend your soul."
+    },
+    {
+        name: "Oroboros",
+        path: "The Voracity",
+        quote: "'Insects are to birds, as hares are to wolves. The stars are to the black hole, as the worlds are to the voracity.'",
+        desc: "The drinker of worlds, the unsatisfied devourer, the black hole with thought, THEY are an Aeon and a Leviathan at the same time.\nIn the eyes of Oroboros, life is a flickering fragment floating in the sea of void, destined to return to the darkness along with the stars which birthed THEM - This darkness is within the depths of THEIR mouths."
+    },
+    {
+        name: "Idrila",
+        path: "The Beauty",
+        quote: "'There is beauty in a stretch of fabric, in the lines of a poem, and in a few notes in a song - Welcome to an era where the idea of 'beauty' is absolutely worthless! How vulgar! How hopeless! How sad!'",
+        desc: "Idrila witnessed the ultimate meaning of the world's existence through the ever-changing view of the universe, known to the rest as the concept of 'beauty.'\nThe Aeon of Beauty suddenly vanished one day. It was just as mysterious as when THEY first appeared."
+    },
+    {
+        name: "Tayzzyronth",
+        path: "The Propagation",
+        quote: "'Hurry and shut your doors and windows if shadows appear at the noontide horizon, for that is no early dusk but the hungering Swarm.'",
+        desc: "Tayzzyronth, also known as the Imperator Insectorum, the Sand King, and the creator of the Swarm Disaster.\nAs the last member of the Coleoptera that rules the land, THEIR Path was ignited out of a desire born from loneliness. Tayzzyronth metamorphosed into a self-duplicating horror, a torrent of infinite propagation. Tayzzyronth - Tayzzyronths rataher - fluttered across the worlds until THEIR advances were halted by fate in some way."
+    },
+    {
+        name: "Mythus",
+        path: "The Enigmata",
+        quote: "'To stop questioning is to ask pouring rain to relinquish its faith in the glittering stars. Open yourself to the roaring river of metaphors, and you will find truth awaits, hiding at the end of the night sky, in the swirling rosy storm of a bygone age.'",
+        desc: "It is a fallacy that all things can be experienced and recognized. The living seek to produce prophecies of the unknown based on their limited grasp of order, but little do they know that the universe has no end and that the truth is but a fevered dream.\n\nTo prevent the certainty that Erudition brought about from destroying the possibilities championed by Mythus, Mythus conjured the Fog of Thought and the Rain of Sensation to reveal to the mortals the inexplicable truth through the four agents: Morph, Screen, Riddle, and Mirage."
+    },
+    {
+        name: "HooH",
+        path: "The Equilibrium",
+        quote: "'I stole away the golden weights, and felt proud of the ripples stirred up. The Aeon always sees right through my tricks and the stars reset the balance to zero.'",
+        desc: "The chain of karma that mortals obsess over is nothing but a rough approximation of the complicated topology behinds all things - HooH dissolved THEIR will into the web of logic behing the universe's movement, maintaining the balance and stability of all things in perpetuity.\nAdventurous mortals tirelessly seek out flaws in this system, believing their intellect to be superior to that of the Aeon. However, little could they imagine that they have already been reduced to strings inside a surveillance system, unable to escape the meticulous network woven by HooH."
     },
 ]
 
