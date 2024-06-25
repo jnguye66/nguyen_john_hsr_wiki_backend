@@ -4,6 +4,8 @@ require('dotenv').config();
 const express = require('express');
 // Creating the express server and storing inside the app variable
 const app = express();
+
+const cors = require('cors');
 // Port in which the server will run on
 const PORT = process.env.PORT || 8000;
 
@@ -17,6 +19,8 @@ const aeonRouter = require('./routes/aeon.js');
 
 // Configuring the server to accept and parse JSON data.
 app.use(express.json());
+
+app.use(cors());
 
 //Custom Middlware
 app.use((req, res, next) => {
