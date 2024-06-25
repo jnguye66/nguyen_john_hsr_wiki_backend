@@ -3,6 +3,7 @@ const Char = require('../models/Char.js');
 module.exports = {
   createChar,
   getChars,
+  getCharById,
   updateChar,
   deleteChar,
 };
@@ -26,6 +27,17 @@ async function getChars(req, res) {
     res.status(200).json(chars)
   } catch (err) {
     res.status(400).send(err)
+  }
+}
+
+// Gets a single character by ID
+async function getCharById(req, res) {
+  try {
+    const charByID = await Char.findById(req.params.id);
+
+    res.status(200).json(charByID);
+  } catch (err) {
+    res.status(400).send(err);
   }
 }
 

@@ -9,6 +9,9 @@ router.post('/', charsCtrl.createChar);
 // GET Request
 router.get('/', charsCtrl.getChars);
 
+// getByID request
+router.get('/:id', charsCtrl.getCharById);
+
 // PATCH Request
 router.patch('/:id', charsCtrl.updateChar);
 
