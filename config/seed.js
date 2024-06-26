@@ -98,7 +98,8 @@ const chars = [
                     amt: 10,
                 },
             ]
-        }
+        },
+        splash: 'https://genshindb.org/wp-content/uploads/2023/03/Trailblazer-Physical-Female-Splash-Art.webp',
     },
     
     {
@@ -189,7 +190,8 @@ const chars = [
                     amt: 10,
                 },
             ]
-        }
+        },
+        splash: 'https://genshindb.org/wp-content/uploads/2023/03/March-7th-Splash-Art.webp',
     },
 
     {
@@ -280,7 +282,8 @@ const chars = [
                     amt: 12.5,
                 },
             ]
-        }
+        },
+        splash: 'https://genshindb.org/wp-content/uploads/2023/03/Dan-Heng-Splash-Art.webp',
     },
 
     {
@@ -371,7 +374,8 @@ const chars = [
                     amt: 10,
                 },
             ]
-        }
+        },
+        splash: 'https://genshindb.org/wp-content/uploads/2022/10/Himeko-Splash-Art.webp'
     },
 
     {
@@ -462,7 +466,8 @@ const chars = [
                     amt: 10,
                 },
             ]
-        }
+        },
+        splash: 'https://genshindb.org/wp-content/uploads/2023/03/Welt-Splash-Art.webp'
     },
 ];
 

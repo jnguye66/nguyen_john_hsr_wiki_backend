@@ -82,6 +82,12 @@ const charSchema = Schema({
     // required: true,
   },
 
+  splash: {
+    type: String,
+    required: true,
+    unique: true
+  }
+
 });
 
 // Index to sort by name in asc order
