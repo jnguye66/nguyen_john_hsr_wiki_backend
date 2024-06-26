@@ -30,27 +30,12 @@ const charSchema = Schema({
   },
 
   story: {
-    stories: {
-      details: {
-        type: String,
-        required: true
+    stories: [
+      {
+        section: String,
+        excerpt: String,
       },
-      story_1: {
-        type: String,
-        required: true
-      },
-      story_2: {
-        type: String,
-        required: true
-      },
-      story_3: {
-        type: String,
-        required: true
-      },
-      story_4: String
-    },
-    // required: true,
-    // unique: true
+    ]
   },
 
   traces: {
